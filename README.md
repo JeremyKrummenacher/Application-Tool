@@ -65,7 +65,11 @@
 ### Run Application
 
 run:
-
+```sh
+  clone repository
+  ``````sh
+  cd /admin
+  ```
   ```sh
   npm install
   ```
