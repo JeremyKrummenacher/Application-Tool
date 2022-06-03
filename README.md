@@ -65,9 +65,10 @@
 ### Run Application
 
 run:
-```sh
+  ```sh
   clone repository
-  ``````sh
+  ```
+   ```sh
   cd /admin
   ```
   ```sh
