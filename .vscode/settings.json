@@ -1,0 +1,8 @@
+{
+    "eslint.workingDirectories": [
+      "./part_b",
+      "./server/",
+      "./part_c_patientor/backend",
+      "./part_d",
+    ]
+  }
