@@ -119,8 +119,9 @@ Docker Compose:
 
 App.vue
   - Default.vue (layout)
-  - ApplicantList.vue
-  - CreateApplicant.vue
+  - Uebersicht.vue
+  - Pruefungen.vue
+  - Hausaufgaben.vue
 
 ### Pinia Stores
 
