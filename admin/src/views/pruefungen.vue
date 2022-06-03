@@ -25,7 +25,7 @@ async function onSubmit() {
       <q-stepper v-model="store.step" vertical color="primary" animated>
         <q-step
           :name="1"
-          title="erstellen sie eine neue Hausaufgabe"
+          title="erstellen sie eine neue Prüfung"
           icon="settings"
         >
           <div class="kx-card-body">

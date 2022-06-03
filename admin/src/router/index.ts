@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { app } from "@/stores/app";
 import Default from "../layouts/Default.vue";
-import ApplicantsList from "../views/Uebers.vue";
-import CreateApplicants from "../views/CreateApplicants.vue";
-import CreateMeetings from "../views/CreateMeetings.vue";
+import Uebersicht from "../views/Uebersicht.vue";
+import Pruefungen from "../views/pruefungen.vue";
+import Hausaufgaben from "../views/hausaufgaben.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,17 +19,17 @@ const router = createRouter({
         {
           path: "/uebersicht",
           name: "uebersicht",
-          component: ApplicantsList,
+          component: Uebersicht,
         },
         {
           path: "/pruefungen",
           name: "Pruefungen",
-          component: CreateApplicants,
+          component: Pruefungen,
         },
         {
           path: "/hausaufgaben",
           name: "Hausaufgaben",
-          component: CreateMeetings,
+          component: Hausaufgaben,
         },
       ],
     },
