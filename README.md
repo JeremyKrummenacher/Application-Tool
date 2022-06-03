@@ -130,7 +130,7 @@ App.vue
     types (Defines types of an object)
     <ul>
       <li>
-        Applicant
+        Auftrag
       </li>
     </ul>
   </li>
