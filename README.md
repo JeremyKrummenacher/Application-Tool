@@ -9,6 +9,7 @@
       </li>
       <li> <a href="#getting-started">Getting Started</a>
         <ul>
+          <li><a href="#run Application">Installation</a></li>
           <li><a href="#prequisites">Prequisites</a></li>
           <li><a href="#installation">Installation</a></li>
         </ul>
@@ -60,6 +61,17 @@
 <!-- GETTING STARTED SECTION-->
 
 ## Getting Started
+
+### Run Application
+
+run:
+
+  ```sh
+  npm install
+  ```
+  ```sh
+  npm run dev
+  ```
 
 ### Prequisites
 
