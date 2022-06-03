@@ -119,8 +119,9 @@ Docker Compose:
 
 App.vue
   - Default.vue (layout)
-  - ApplicantList.vue
-  - CreateApplicant.vue
+  - Uebersicht.vue
+  - Pruefungen.vue
+  - Hausaufgaben.vue
 
 ### Pinia Stores
 
@@ -129,7 +130,7 @@ App.vue
     types (Defines types of an object)
     <ul>
       <li>
-        Applicant
+        Auftrag
       </li>
     </ul>
   </li>
