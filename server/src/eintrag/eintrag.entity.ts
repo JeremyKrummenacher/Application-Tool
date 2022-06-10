@@ -11,7 +11,7 @@ import {
 
 
 @Entity()
-export class Applicant {
+export class Eintrag {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 

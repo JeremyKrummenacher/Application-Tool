@@ -1,10 +1,8 @@
+import { Eintrag } from "./eintrag/eintrag.entity";
 import { Module, Global, DynamicModule } from "@nestjs/common";
 import { EnvModule } from "./env.module";
 import { EnvService } from "./env.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { Applicant } from "./applicant/applicant.entity";
-import Application from "./application/application.entity";
-import Meeting from "./meeting/meeting.entity";
 
 function DatabaseOrmModule(): DynamicModule {
   const config = new EnvService().read();
@@ -20,7 +18,7 @@ function DatabaseOrmModule(): DynamicModule {
     autoLoadEntities: true,
     synchronize: true,
 
-    entities: [Applicant, Application, Meeting],
+    entities: [Eintrag],
   });
 }
 

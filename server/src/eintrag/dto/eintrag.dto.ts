@@ -3,7 +3,7 @@ import { Type } from "class-transformer";
 import { IsString, IsBoolean, IsOptional } from "class-validator";
 
 
-export class ApplicantDto {
+export class EintragDto {
   @IsOptional()
   @IsString()
   id!: string; //| null;

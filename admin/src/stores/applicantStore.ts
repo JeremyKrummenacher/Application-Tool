@@ -16,11 +16,9 @@ export const applicantStore = defineStore({
   },
   actions: {
     async getAuftrage() {
-      const result = await axios.get(
-        `${import.meta.env.VITE_API_URL}/applicant`
-      );
-      const applicants: Array<IAuftrag> = result.data;
-      this.Autrage = applicants;
+      const result = await axios.get(`${import.meta.env.VITE_API_URL}/eintrag`);
+      const eintrage: Array<IAuftrag> = result.data;
+      this.Autrage = eintrage;
     },
     async createPruefung(newPruefung: IAuftrag) {
       const body = {
@@ -28,14 +26,15 @@ export const applicantStore = defineStore({
         titel: newPruefung.titel,
         fach: newPruefung.fach,
         beschreibung: newPruefung.beschreibung,
+        date: newPruefung.date,
       };
       const result = await axios.post(
-        `${import.meta.env.VITE_API_URL}/meeting/register`,
+        `${import.meta.env.VITE_API_URL}/eintrag/register`,
         body
         //headers
       );
-      const meeting: IAuftrag = result.data;
-      this.Autrage.push(meeting);
+      const eintrag: IAuftrag = result.data;
+      this.Autrage.push(eintrag);
     },
     async createHausaufgabe(newPruefung: IAuftrag) {
       const body = {
@@ -43,14 +42,15 @@ export const applicantStore = defineStore({
         titel: newPruefung.titel,
         fach: newPruefung.fach,
         beschreibung: newPruefung.beschreibung,
+        date: newPruefung.date,
       };
       const result = await axios.post(
-        `${import.meta.env.VITE_API_URL}/meeting/register`,
+        `${import.meta.env.VITE_API_URL}/eintrag/register`,
         body
         //headers
       );
-      const meeting: IAuftrag = result.data;
-      this.Autrage.push(meeting);
+      const eintrag: IAuftrag = result.data;
+      this.Autrage.push(eintrag);
     },
   },
 });

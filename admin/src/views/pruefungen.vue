@@ -9,7 +9,7 @@ const store = applicantStore();
 const auftrag = ref(new Auftrag());
 
 async function onSubmit() {
-  store.createHausaufgabe(auftrag.value);
+  store.createPruefung(auftrag.value);
   console.log(auftrag.value);
   await new Promise((resolve) => setTimeout(resolve, 3000));
   router.push({ name: "uebersicht" });
