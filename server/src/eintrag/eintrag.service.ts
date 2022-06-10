@@ -25,7 +25,7 @@ export class EintragService {
   }
 
   findAll(): Promise<Eintrag[]> {
-    return this.eintragRepository.find({ relations: ["eintragfiles"] });
+    return this.eintragRepository.find();
   }
 
   findById(userId: string): Promise<any> {
@@ -43,7 +43,6 @@ export class EintragService {
   async deleteEintrag(id: string) {
     const eintrag = await this.eintragRepository.findOne({
       where: { id: id },
-      relations: ["eintragfiles"],
     });
     const userID = eintrag.id;
     console.log(
