@@ -27,7 +27,7 @@ export class Eintrag {
   @Column()
   beschreibung: string;
 
-  @Column()
+  @Column({ type: "date" })
   date: Date;
 
 }

@@ -11,7 +11,7 @@ const auftrag = ref(new Auftrag());
 async function onSubmit() {
   store.createPruefung(auftrag.value);
   console.log(auftrag.value);
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   router.push({ name: "uebersicht" });
 }
 </script>

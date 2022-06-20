@@ -56,7 +56,6 @@ const columns: any = [
     sortable: true,
   },
 ];
-
 </script>
 
 <template :props="props">
